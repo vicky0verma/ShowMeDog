@@ -1,0 +1,15 @@
+sourceryCommand: null
+sourceryTemplate: null
+ShowMeDogTests:
+  sources:
+    include:
+    - ./ShowMeDog
+  output: ./Mock.generated.swift
+  targets:
+  - ShowMeDogTests
+  testable:
+  - ShowMeDog
+  import:
+  - Foundation
+  - RxCocoa
+  - RxSwift

@@ -1,0 +1,6 @@
+framework module Pods_ShowMeDog {
+  umbrella header "Pods-ShowMeDog-umbrella.h"
+
+  export *
+  module * { export * }
+}

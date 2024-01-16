@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F3619AE94DF177E37D4B79F /* Pods_ShowMeDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92515F9BC023A6CD1F36F455 /* Pods_ShowMeDogTests.framework */; };
+		DB4C16D92B56E50C00373B19 /* ShowMeDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16D82B56E50C00373B19 /* ShowMeDogViewController.swift */; };
+		DB4C16DB2B56E6FD00373B19 /* ShowMeDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16DA2B56E6FD00373B19 /* ShowMeDogViewModel.swift */; };
+		DB4C16DD2B56E76300373B19 /* ShowMeDogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16DC2B56E76300373B19 /* ShowMeDogCoordinator.swift */; };
+		DB4C16E02B56EB0D00373B19 /* RXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16DF2B56EB0D00373B19 /* RXUtils.swift */; };
+		DB4C16E22B56F24F00373B19 /* SMDAssemblerInitialiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16E12B56F24F00373B19 /* SMDAssemblerInitialiser.swift */; };
+		DB4C16E42B56F31800373B19 /* SWInjectUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16E32B56F31800373B19 /* SWInjectUtils.swift */; };
+		DB4C16E92B5704C400373B19 /* ShowMeDogBreedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16E82B5704C400373B19 /* ShowMeDogBreedListViewModel.swift */; };
+		DB4C16EB2B5704D500373B19 /* ShowMeDogBreedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16EA2B5704D500373B19 /* ShowMeDogBreedListViewController.swift */; };
+		DB4C16F32B57068400373B19 /* ShowMeDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16F22B57068400373B19 /* ShowMeDogTests.swift */; };
+		DB4C16F92B57095300373B19 /* ShowMeDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16F22B57068400373B19 /* ShowMeDogTests.swift */; };
+		DB4C16FD2B57114A00373B19 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16FC2B57114A00373B19 /* Mock.generated.swift */; };
+		DB4C16FE2B57124400373B19 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16FC2B57114A00373B19 /* Mock.generated.swift */; };
+		DB4C16FF2B57127A00373B19 /* ShowMeDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16DA2B56E6FD00373B19 /* ShowMeDogViewModel.swift */; };
+		DB4C17002B5712A700373B19 /* SMDUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3AB2B55741100028FAC /* SMDUseCase.swift */; };
+		DB4C17012B5712AA00373B19 /* SMDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A92B55740400028FAC /* SMDNetwork.swift */; };
+		DB4C17022B5712B200373B19 /* ShowMeDogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16DC2B56E76300373B19 /* ShowMeDogCoordinator.swift */; };
+		DB4C17032B57131600373B19 /* SMDResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3AF2B55746E00028FAC /* SMDResponseEntity.swift */; };
+		DB4C17042B57132200373B19 /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A02B55317400028FAC /* NetworkClientType.swift */; };
+		DB4C17052B57134E00373B19 /* NetworkRequestCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C39E2B55317300028FAC /* NetworkRequestCreator.swift */; };
+		DB4C17062B57135600373B19 /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C39D2B55317300028FAC /* RestAPIClient.swift */; };
+		DB4C17072B57135A00373B19 /* SMDAPIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A72B55339A00028FAC /* SMDAPIURLs.swift */; };
+		DB4C17082B57135D00373B19 /* SMDCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A52B55329700028FAC /* SMDCachable.swift */; };
+		DB4C17092B57136300373B19 /* DataRequest+ValidateExpiredSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C39F2B55317400028FAC /* DataRequest+ValidateExpiredSession.swift */; };
+		DB4C170A2B57137E00373B19 /* ShowMeDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16D82B56E50C00373B19 /* ShowMeDogViewController.swift */; };
+		DB4C170B2B57138500373B19 /* SMDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3B32B557A2000028FAC /* SMDConstants.swift */; };
+		DB4C170C2B57139700373B19 /* RXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16DF2B56EB0D00373B19 /* RXUtils.swift */; };
+		DB4C170D2B57139A00373B19 /* SWInjectUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C16E32B56F31800373B19 /* SWInjectUtils.swift */; };
+		DB71C3672B551AC200028FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3662B551AC200028FAC /* AppDelegate.swift */; };
+		DB71C36E2B551AC200028FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB71C36C2B551AC200028FAC /* Main.storyboard */; };
+		DB71C3702B551AC400028FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB71C36F2B551AC400028FAC /* Assets.xcassets */; };
+		DB71C3732B551AC400028FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB71C3712B551AC400028FAC /* LaunchScreen.storyboard */; };
+		DB71C3A12B55317400028FAC /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C39D2B55317300028FAC /* RestAPIClient.swift */; };
+		DB71C3A22B55317400028FAC /* NetworkRequestCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C39E2B55317300028FAC /* NetworkRequestCreator.swift */; };
+		DB71C3A32B55317400028FAC /* DataRequest+ValidateExpiredSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C39F2B55317400028FAC /* DataRequest+ValidateExpiredSession.swift */; };
+		DB71C3A42B55317400028FAC /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A02B55317400028FAC /* NetworkClientType.swift */; };
+		DB71C3A62B55329700028FAC /* SMDCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A52B55329700028FAC /* SMDCachable.swift */; };
+		DB71C3A82B55339A00028FAC /* SMDAPIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A72B55339A00028FAC /* SMDAPIURLs.swift */; };
+		DB71C3AA2B55740400028FAC /* SMDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3A92B55740400028FAC /* SMDNetwork.swift */; };
+		DB71C3AC2B55741100028FAC /* SMDUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3AB2B55741100028FAC /* SMDUseCase.swift */; };
+		DB71C3B02B55746E00028FAC /* SMDResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3AF2B55746E00028FAC /* SMDResponseEntity.swift */; };
+		DB71C3B22B55747C00028FAC /* SMDAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3B12B55747C00028FAC /* SMDAssembler.swift */; };
+		DB71C3B42B557A2000028FAC /* SMDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71C3B32B557A2000028FAC /* SMDConstants.swift */; };
+		F477C6CDC55CEAFD6AFF1F42 /* Pods_ShowMeDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC66903B1190BCF7430C7FF9 /* Pods_ShowMeDog.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB4C16F42B57068400373B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB71C35B2B551AC200028FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB71C3622B551AC200028FAC;
+			remoteInfo = ShowMeDog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB4C16E72B56F9AC00373B19 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08E7F167F4C3ED22A3489149 /* Pods-ShowMeDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMeDogTests.release.xcconfig"; path = "Target Support Files/Pods-ShowMeDogTests/Pods-ShowMeDogTests.release.xcconfig"; sourceTree = "<group>"; };
+		455D0E59DDA6711FAF6C5CC6 /* Pods-ShowMeDog-ShowMeDogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMeDog-ShowMeDogUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShowMeDog-ShowMeDogUITests/Pods-ShowMeDog-ShowMeDogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92515F9BC023A6CD1F36F455 /* Pods_ShowMeDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowMeDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30F16B12CA612D9C5807C76 /* Pods-ShowMeDog-ShowMeDogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMeDog-ShowMeDogUITests.release.xcconfig"; path = "Target Support Files/Pods-ShowMeDog-ShowMeDogUITests/Pods-ShowMeDog-ShowMeDogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4468C4BAFC4F48EE5165470 /* Pods-ShowMeDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMeDog.release.xcconfig"; path = "Target Support Files/Pods-ShowMeDog/Pods-ShowMeDog.release.xcconfig"; sourceTree = "<group>"; };
+		B66DDF9E68FE0FD37FC25ED5 /* Pods-ShowMeDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMeDogTests.debug.xcconfig"; path = "Target Support Files/Pods-ShowMeDogTests/Pods-ShowMeDogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B823CD36223AC0F25E2889C7 /* Pods-ShowMeDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMeDog.debug.xcconfig"; path = "Target Support Files/Pods-ShowMeDog/Pods-ShowMeDog.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4C16D82B56E50C00373B19 /* ShowMeDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMeDogViewController.swift; sourceTree = "<group>"; };
+		DB4C16DA2B56E6FD00373B19 /* ShowMeDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMeDogViewModel.swift; sourceTree = "<group>"; };
+		DB4C16DC2B56E76300373B19 /* ShowMeDogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMeDogCoordinator.swift; sourceTree = "<group>"; };
+		DB4C16DF2B56EB0D00373B19 /* RXUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXUtils.swift; sourceTree = "<group>"; };
+		DB4C16E12B56F24F00373B19 /* SMDAssemblerInitialiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDAssemblerInitialiser.swift; sourceTree = "<group>"; };
+		DB4C16E32B56F31800373B19 /* SWInjectUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWInjectUtils.swift; sourceTree = "<group>"; };
+		DB4C16E82B5704C400373B19 /* ShowMeDogBreedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMeDogBreedListViewModel.swift; sourceTree = "<group>"; };
+		DB4C16EA2B5704D500373B19 /* ShowMeDogBreedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMeDogBreedListViewController.swift; sourceTree = "<group>"; };
+		DB4C16F02B57068400373B19 /* ShowMeDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowMeDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4C16F22B57068400373B19 /* ShowMeDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMeDogTests.swift; sourceTree = "<group>"; };
+		DB4C16FC2B57114A00373B19 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		DB71C3632B551AC200028FAC /* ShowMeDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowMeDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB71C3662B551AC200028FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB71C36D2B551AC200028FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB71C36F2B551AC400028FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB71C3722B551AC400028FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB71C3742B551AC400028FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB71C39D2B55317300028FAC /* RestAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
+		DB71C39E2B55317300028FAC /* NetworkRequestCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestCreator.swift; sourceTree = "<group>"; };
+		DB71C39F2B55317400028FAC /* DataRequest+ValidateExpiredSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRequest+ValidateExpiredSession.swift"; sourceTree = "<group>"; };
+		DB71C3A02B55317400028FAC /* NetworkClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientType.swift; sourceTree = "<group>"; };
+		DB71C3A52B55329700028FAC /* SMDCachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDCachable.swift; sourceTree = "<group>"; };
+		DB71C3A72B55339A00028FAC /* SMDAPIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDAPIURLs.swift; sourceTree = "<group>"; };
+		DB71C3A92B55740400028FAC /* SMDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDNetwork.swift; sourceTree = "<group>"; };
+		DB71C3AB2B55741100028FAC /* SMDUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDUseCase.swift; sourceTree = "<group>"; };
+		DB71C3AF2B55746E00028FAC /* SMDResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDResponseEntity.swift; sourceTree = "<group>"; };
+		DB71C3B12B55747C00028FAC /* SMDAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDAssembler.swift; sourceTree = "<group>"; };
+		DB71C3B32B557A2000028FAC /* SMDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDConstants.swift; sourceTree = "<group>"; };
+		FC66903B1190BCF7430C7FF9 /* Pods_ShowMeDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowMeDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB4C16ED2B57068400373B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3619AE94DF177E37D4B79F /* Pods_ShowMeDogTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71C3602B551AC200028FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F477C6CDC55CEAFD6AFF1F42 /* Pods_ShowMeDog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		465778831657D0ACDFC944A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC66903B1190BCF7430C7FF9 /* Pods_ShowMeDog.framework */,
+				92515F9BC023A6CD1F36F455 /* Pods_ShowMeDogTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AE8B433355BF618507F99DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B823CD36223AC0F25E2889C7 /* Pods-ShowMeDog.debug.xcconfig */,
+				B4468C4BAFC4F48EE5165470 /* Pods-ShowMeDog.release.xcconfig */,
+				455D0E59DDA6711FAF6C5CC6 /* Pods-ShowMeDog-ShowMeDogUITests.debug.xcconfig */,
+				B30F16B12CA612D9C5807C76 /* Pods-ShowMeDog-ShowMeDogUITests.release.xcconfig */,
+				B66DDF9E68FE0FD37FC25ED5 /* Pods-ShowMeDogTests.debug.xcconfig */,
+				08E7F167F4C3ED22A3489149 /* Pods-ShowMeDogTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB4C16DE2B56EB0000373B19 /* RXUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C16DF2B56EB0D00373B19 /* RXUtils.swift */,
+				DB4C16E32B56F31800373B19 /* SWInjectUtils.swift */,
+			);
+			path = RXUtils;
+			sourceTree = "<group>";
+		};
+		DB4C16F12B57068400373B19 /* ShowMeDogTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C16F22B57068400373B19 /* ShowMeDogTests.swift */,
+			);
+			path = ShowMeDogTests;
+			sourceTree = "<group>";
+		};
+		DB71C35A2B551AC200028FAC = {
+			isa = PBXGroup;
+			children = (
+				DB4C16FC2B57114A00373B19 /* Mock.generated.swift */,
+				DB71C3652B551AC200028FAC /* ShowMeDog */,
+				DB4C16F12B57068400373B19 /* ShowMeDogTests */,
+				DB71C3642B551AC200028FAC /* Products */,
+				5AE8B433355BF618507F99DB /* Pods */,
+				465778831657D0ACDFC944A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB71C3642B551AC200028FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C3632B551AC200028FAC /* ShowMeDog.app */,
+				DB4C16F02B57068400373B19 /* ShowMeDogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB71C3652B551AC200028FAC /* ShowMeDog */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C16DE2B56EB0000373B19 /* RXUtils */,
+				DB71C3AE2B55746300028FAC /* SMDAssembler */,
+				DB71C3AD2B55745100028FAC /* SMDEntities */,
+				DB71C3962B551B0C00028FAC /* AppDelegate */,
+				DB71C39C2B551BA700028FAC /* ShowMeDogAssets */,
+				DB71C39B2B551B8600028FAC /* ShowMeDogHome */,
+				DB71C3992B551B6F00028FAC /* Coordinator */,
+				DB71C3972B551B6F00028FAC /* Network */,
+				DB71C3982B551B6F00028FAC /* RestAPIClient */,
+				DB71C39A2B551B6F00028FAC /* Usecase */,
+				DB71C3742B551AC400028FAC /* Info.plist */,
+			);
+			path = ShowMeDog;
+			sourceTree = "<group>";
+		};
+		DB71C3962B551B0C00028FAC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C3662B551AC200028FAC /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DB71C3972B551B6F00028FAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C3A92B55740400028FAC /* SMDNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB71C3982B551B6F00028FAC /* RestAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C39F2B55317400028FAC /* DataRequest+ValidateExpiredSession.swift */,
+				DB71C3A02B55317400028FAC /* NetworkClientType.swift */,
+				DB71C39E2B55317300028FAC /* NetworkRequestCreator.swift */,
+				DB71C39D2B55317300028FAC /* RestAPIClient.swift */,
+				DB71C3A52B55329700028FAC /* SMDCachable.swift */,
+				DB71C3A72B55339A00028FAC /* SMDAPIURLs.swift */,
+			);
+			path = RestAPIClient;
+			sourceTree = "<group>";
+		};
+		DB71C3992B551B6F00028FAC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C16DC2B56E76300373B19 /* ShowMeDogCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DB71C39A2B551B6F00028FAC /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C3AB2B55741100028FAC /* SMDUseCase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		DB71C39B2B551B8600028FAC /* ShowMeDogHome */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C36C2B551AC200028FAC /* Main.storyboard */,
+				DB4C16D82B56E50C00373B19 /* ShowMeDogViewController.swift */,
+				DB4C16DA2B56E6FD00373B19 /* ShowMeDogViewModel.swift */,
+				DB4C16E82B5704C400373B19 /* ShowMeDogBreedListViewModel.swift */,
+				DB4C16EA2B5704D500373B19 /* ShowMeDogBreedListViewController.swift */,
+			);
+			path = ShowMeDogHome;
+			sourceTree = "<group>";
+		};
+		DB71C39C2B551BA700028FAC /* ShowMeDogAssets */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C36F2B551AC400028FAC /* Assets.xcassets */,
+				DB71C3712B551AC400028FAC /* LaunchScreen.storyboard */,
+			);
+			path = ShowMeDogAssets;
+			sourceTree = "<group>";
+		};
+		DB71C3AD2B55745100028FAC /* SMDEntities */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C3AF2B55746E00028FAC /* SMDResponseEntity.swift */,
+				DB71C3B32B557A2000028FAC /* SMDConstants.swift */,
+			);
+			path = SMDEntities;
+			sourceTree = "<group>";
+		};
+		DB71C3AE2B55746300028FAC /* SMDAssembler */ = {
+			isa = PBXGroup;
+			children = (
+				DB71C3B12B55747C00028FAC /* SMDAssembler.swift */,
+				DB4C16E12B56F24F00373B19 /* SMDAssemblerInitialiser.swift */,
+			);
+			path = SMDAssembler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB4C16EF2B57068400373B19 /* ShowMeDogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4C16F62B57068400373B19 /* Build configuration list for PBXNativeTarget "ShowMeDogTests" */;
+			buildPhases = (
+				8CFA31E07729415B2B5A3C08 /* [CP] Check Pods Manifest.lock */,
+				DB4C16EC2B57068400373B19 /* Sources */,
+				DB4C16ED2B57068400373B19 /* Frameworks */,
+				DB4C16EE2B57068400373B19 /* Resources */,
+				A8626AD1B7D4586BCA384FEE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB4C16F52B57068400373B19 /* PBXTargetDependency */,
+			);
+			name = ShowMeDogTests;
+			productName = ShowMeDogTests;
+			productReference = DB4C16F02B57068400373B19 /* ShowMeDogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB71C3622B551AC200028FAC /* ShowMeDog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB71C38D2B551AC400028FAC /* Build configuration list for PBXNativeTarget "ShowMeDog" */;
+			buildPhases = (
+				479204435A2708E42B019F27 /* [CP] Check Pods Manifest.lock */,
+				DB71C35F2B551AC200028FAC /* Sources */,
+				DB71C3602B551AC200028FAC /* Frameworks */,
+				DB71C3612B551AC200028FAC /* Resources */,
+				5E0BDF25253FA614B6D47BD0 /* [CP] Embed Pods Frameworks */,
+				DB4C16E72B56F9AC00373B19 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShowMeDog;
+			productName = ShowMeDog;
+			productReference = DB71C3632B551AC200028FAC /* ShowMeDog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB71C35B2B551AC200028FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DB4C16EF2B57068400373B19 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DB71C3622B551AC200028FAC;
+					};
+					DB71C3622B551AC200028FAC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = DB71C35E2B551AC200028FAC /* Build configuration list for PBXProject "ShowMeDog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB71C35A2B551AC200028FAC;
+			productRefGroup = DB71C3642B551AC200028FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB71C3622B551AC200028FAC /* ShowMeDog */,
+				DB4C16EF2B57068400373B19 /* ShowMeDogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB4C16EE2B57068400373B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71C3612B551AC200028FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB71C3732B551AC400028FAC /* LaunchScreen.storyboard in Resources */,
+				DB71C3702B551AC400028FAC /* Assets.xcassets in Resources */,
+				DB71C36E2B551AC200028FAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		479204435A2708E42B019F27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowMeDog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E0BDF25253FA614B6D47BD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMeDog/Pods-ShowMeDog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMeDog/Pods-ShowMeDog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowMeDog/Pods-ShowMeDog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFA31E07729415B2B5A3C08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowMeDogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8626AD1B7D4586BCA384FEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMeDogTests/Pods-ShowMeDogTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMeDogTests/Pods-ShowMeDogTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowMeDogTests/Pods-ShowMeDogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB4C16EC2B57068400373B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4C17032B57131600373B19 /* SMDResponseEntity.swift in Sources */,
+				DB4C17062B57135600373B19 /* RestAPIClient.swift in Sources */,
+				DB4C17072B57135A00373B19 /* SMDAPIURLs.swift in Sources */,
+				DB4C170C2B57139700373B19 /* RXUtils.swift in Sources */,
+				DB4C170B2B57138500373B19 /* SMDConstants.swift in Sources */,
+				DB4C17052B57134E00373B19 /* NetworkRequestCreator.swift in Sources */,
+				DB4C17002B5712A700373B19 /* SMDUseCase.swift in Sources */,
+				DB4C170D2B57139A00373B19 /* SWInjectUtils.swift in Sources */,
+				DB4C17012B5712AA00373B19 /* SMDNetwork.swift in Sources */,
+				DB4C16FF2B57127A00373B19 /* ShowMeDogViewModel.swift in Sources */,
+				DB4C16FE2B57124400373B19 /* Mock.generated.swift in Sources */,
+				DB4C17042B57132200373B19 /* NetworkClientType.swift in Sources */,
+				DB4C17092B57136300373B19 /* DataRequest+ValidateExpiredSession.swift in Sources */,
+				DB4C170A2B57137E00373B19 /* ShowMeDogViewController.swift in Sources */,
+				DB4C17022B5712B200373B19 /* ShowMeDogCoordinator.swift in Sources */,
+				DB4C16F32B57068400373B19 /* ShowMeDogTests.swift in Sources */,
+				DB4C17082B57135D00373B19 /* SMDCachable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71C35F2B551AC200028FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4C16DB2B56E6FD00373B19 /* ShowMeDogViewModel.swift in Sources */,
+				DB71C3B42B557A2000028FAC /* SMDConstants.swift in Sources */,
+				DB71C3AC2B55741100028FAC /* SMDUseCase.swift in Sources */,
+				DB4C16E02B56EB0D00373B19 /* RXUtils.swift in Sources */,
+				DB71C3A12B55317400028FAC /* RestAPIClient.swift in Sources */,
+				DB4C16DD2B56E76300373B19 /* ShowMeDogCoordinator.swift in Sources */,
+				DB71C3A22B55317400028FAC /* NetworkRequestCreator.swift in Sources */,
+				DB71C3AA2B55740400028FAC /* SMDNetwork.swift in Sources */,
+				DB4C16E42B56F31800373B19 /* SWInjectUtils.swift in Sources */,
+				DB71C3A42B55317400028FAC /* NetworkClientType.swift in Sources */,
+				DB4C16E22B56F24F00373B19 /* SMDAssemblerInitialiser.swift in Sources */,
+				DB4C16EB2B5704D500373B19 /* ShowMeDogBreedListViewController.swift in Sources */,
+				DB71C3672B551AC200028FAC /* AppDelegate.swift in Sources */,
+				DB4C16D92B56E50C00373B19 /* ShowMeDogViewController.swift in Sources */,
+				DB4C16FD2B57114A00373B19 /* Mock.generated.swift in Sources */,
+				DB4C16E92B5704C400373B19 /* ShowMeDogBreedListViewModel.swift in Sources */,
+				DB71C3B22B55747C00028FAC /* SMDAssembler.swift in Sources */,
+				DB71C3B02B55746E00028FAC /* SMDResponseEntity.swift in Sources */,
+				DB71C3A32B55317400028FAC /* DataRequest+ValidateExpiredSession.swift in Sources */,
+				DB71C3A62B55329700028FAC /* SMDCachable.swift in Sources */,
+				DB4C16F92B57095300373B19 /* ShowMeDogTests.swift in Sources */,
+				DB71C3A82B55339A00028FAC /* SMDAPIURLs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB4C16F52B57068400373B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB71C3622B551AC200028FAC /* ShowMeDog */;
+			targetProxy = DB4C16F42B57068400373B19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB71C36C2B551AC200028FAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB71C36D2B551AC200028FAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB71C3712B551AC400028FAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB71C3722B551AC400028FAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB4C16F72B57068400373B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66DDF9E68FE0FD37FC25ED5 /* Pods-ShowMeDogTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soni.ShowMeDogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShowMeDog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShowMeDog";
+			};
+			name = Debug;
+		};
+		DB4C16F82B57068400373B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E7F167F4C3ED22A3489149 /* Pods-ShowMeDogTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = soni.ShowMeDogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShowMeDog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShowMeDog";
+			};
+			name = Release;
+		};
+		DB71C38B2B551AC400028FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB71C38C2B551AC400028FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB71C38E2B551AC400028FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B823CD36223AC0F25E2889C7 /* Pods-ShowMeDog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowMeDog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowMeDog;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = soni.ShowMeDog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB71C38F2B551AC400028FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4468C4BAFC4F48EE5165470 /* Pods-ShowMeDog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShowMeDog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowMeDog;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = soni.ShowMeDog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB4C16F62B57068400373B19 /* Build configuration list for PBXNativeTarget "ShowMeDogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4C16F72B57068400373B19 /* Debug */,
+				DB4C16F82B57068400373B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB71C35E2B551AC200028FAC /* Build configuration list for PBXProject "ShowMeDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB71C38B2B551AC400028FAC /* Debug */,
+				DB71C38C2B551AC400028FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB71C38D2B551AC400028FAC /* Build configuration list for PBXNativeTarget "ShowMeDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB71C38E2B551AC400028FAC /* Debug */,
+				DB71C38F2B551AC400028FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB71C35B2B551AC200028FAC /* Project object */;
+}
